@@ -63,7 +63,7 @@ def test_model(model, test_data, device, is_gnn=False, batch_size=8, results_dir
     import os
     os.makedirs(results_dir, exist_ok=True)
     class_name = model.__class__.__name__
-    out_path = os.path.join(results_dir, f"{class_name}_results2.json")
+    out_path = os.path.join(results_dir, f"{class_name}_results5.json")
     with open(out_path, "w") as f:
         json.dump(results, f, indent=4)
 

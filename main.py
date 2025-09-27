@@ -73,12 +73,6 @@ def main():
         test_model(gnn_best_model, g_test, device=device, is_gnn=True)
 
 
-def create_plots():
-    raw_data, labels = generate_deepset_data(3, min_points=20, max_points=25, delta=2)
-    print(labels)
-    plot_point_sets(raw_data, labels)
-
 
 if __name__ == '__main__':
-    # main()
-    create_plots()
+    main()
